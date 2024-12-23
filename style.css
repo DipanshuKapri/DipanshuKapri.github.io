@@ -16,6 +16,19 @@ h2 {
 p {
   color: #555;
 }
+/* Button Styles */
+.btn-primary {
+  background-color: #00a3e0;
+  border: none;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #00387c;
+  transform: scale(1.05);
+}
 
 /* Navbar */
 
