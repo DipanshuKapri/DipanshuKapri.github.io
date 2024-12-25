@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dipanshu's Portfolio">
+  <meta name="description" content="Dipanshu's Portfolio showcasing expertise in web development, AI and ML. Skills include Python, JavaScript, Node.js, and more.">
   <meta name="author" content="Dipanshu">
   <title>Dipanshu's Portfolio</title>
   <link rel="icon" type="image/jpg" href="//pbs.twimg.com/profile_images/1816474701360685056/-JaD_SYC_400x400.jpg">
@@ -24,30 +24,27 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
 
   <!-- Navbar -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <nav id="navbar" class="navbar navbar-expand navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand">
         <img src="//pbs.twimg.com/profile_images/1816474701360685056/-JaD_SYC_400x400.jpg" alt="Dipanshu's Logo" width="50" height="50" class="d-inline-block align-text-top">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
+       </a>
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero-section text-white text-center py-5">
     <div class="container">
-      <h1 class="display-4 animate__animated animate__fadeInDown">Hi I'am Dipanshu</h1>
-      <img src="//i.postimg.cc/C1t794WG/carbon.png" class="img-fluid" width="700" alt="loading"><br>
+      <h1 id="animated-coding" class="display-4 animate__animated animate__fadeInDown">
+        <span id="coding-animation"></span><span class="cursor">|</span>
+      </h1>
+      <img src="//i.postimg.cc/4y8DZGTB/carbon.png" class="img-fluid" width="650" alt="loading"><br>
       <a href="#contact" class="btn btn-primary btn-lg mt-3 animate__animated animate__pulse animate__infinite">Contact Me</a>
     </div>
   </section>
@@ -56,8 +53,9 @@
   <section id="about" class="py-5">
     <div class="container text-center">
       <h2>About Me</h2>
-      <p class="lead">I am a final-year Computer Science B.Tech student passionate about innovation and technology, specializing in full-stack development, data analysis, and creating seamless user experiences.</p>
-      <button onclick="window.open('//drive.google.com/file/d/1KjoZjdCVHg4wpem3grvsqrspEoGQRHKI/view?usp=sharing');" class="btn btn-primary btn-lg mt-3 animate__animated animate__pulse animate__infinite">Resume</button>
+      <p class="lead">I am a final-year B.Tech Computer Science Engineering student at SRM IST, passionate about innovation and technology with hands-on experience in Web development, data analysis, AI and Machine Learning. I am passionate about leveraging technology to solve real-world problems and I am eager to contribute to innovative projects.</p>
+      <button onclick="window.open('//drive.google.com/file/d/1KjoZjdCVHg4wpem3grvsqrspEoGQRHKI/view?usp=sharing');"
+        class="btn btn-primary btn-lg mt-3 animate__animated animate__pulse animate__infinite">Resume</button>
     </div>
   </section>
 
@@ -68,17 +66,17 @@
       <div class="row mt-4 text-center">
         <div class="col-md-4">
           <i class="fas fa-code fa-3x mb-3 text-primary"></i>
-          <h5>Programming Languages</h5>
+          <h4>Programming Languages</h4>
           <p>C, C++, Python, JavaScript</p>
         </div>
         <div class="col-md-4">
           <i class="fas fa-brain fa-3x mb-3 text-info"></i>
-          <h5>AI</h5>
+          <h4>AI</h4>
           <p>Machine Learning, LLM, Generative AI, Power BI</p>
         </div>
         <div class="col-md-4">
           <i class="fas fa-globe fa-3x mb-3" style="color:blue;"></i>
-          <h5>Web Development</h5>
+          <h4>Web Development</h4>
           <p> HTML, CSS, Bootstrap, JavaScript, NodeJS, SQL</p>
         </div>
       </div>
@@ -95,17 +93,18 @@
             <img src="//cdn.motocms.com/src/868x580/68100/68194-original-1200.jpg" class="card-img-top" alt="Project 1">
             <div class="card-body">
               <h5 class="card-title">Library Website</h5>
-              <p class="card-text">Library website utilizes web development technologies such as HTML, CSS, JavaScript, and a backend framework Node.js for dynamic content and database management.</p>
+              <p class="card-text">Designed and developed a user-friendly library website using web development technologies such as HTML, CSS, Bootstrap, JavaScript, and a backend framework Node.js for dynamiccontent and database management.</p>
             </div>
-          </div>
+          </div> 
         </div>
         <div class="col-md-4">
           <div class="card shadow">
-            <img src="//analyticsindiamag.com/wp-content/uploads/2020/03/SBI-Stock-Prediction.png" class="card-img-top" alt="Project 2">
+            <img src="//analyticsindiamag.com/wp-content/uploads/2020/03/SBI-Stock-Prediction.png" class="card-img-top"
+              alt="Project 2">
             <div class="card-body">
               <h5 class="card-title">Stock predictor - Machine Learning</h5>
-              <p class="card-text">LSTM-based stock prediction model for Indian stock market demonstrates deep learning application
-                in finance, addressing research gaps and providing a practical guide for researchers and practitioners.</p>
+              <p class="card-text">Built a stock price prediction system using LSTM networks, ensuring accurate forecasts through preprocessing historical data and the incorporation of external factors such as financial reports and market sentiment, we also evaluated model performance and visualized trends to provide actionable insights for informed decision-making while buying stocks.
+              </p>
             </div>
           </div>
         </div>
@@ -149,11 +148,11 @@
   <footer class="footer bg-dark text-white py-4">
     <div class="container text-center">
       <div class="socials">
-        <a href="//linkedin.com/in/dipanshukapri" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="//x.com/DipanshuKapri" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
-        <a href="//instagram.com/dipanshukapri" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
-        <a href="//github.com/DipanshuKapri" class="text-white"><i class="fab fa-github fa-2x"></i></a>
-        <a href="mailto:dipanshukapri25@gmail.com" class="text-white me-3"><i class="fas fa-envelope fa-2x"></i></a>
+        <a href="//linkedin.com/in/dipanshukapri" target="_blank" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="//x.com/DipanshuKapri" target="_blank" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="//instagram.com/dipanshukapri" target="_blank" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="//github.com/DipanshuKapri" target="_blank" class="text-white"><i class="fab fa-github fa-2x"></i></a>
+        <a href="mailto:dipanshukapri25@gmail.com" target="_blank" class="text-white me-3"><i class="fas fa-envelope fa-2x"></i></a>
       </div>
       <p class="mt-3">© 2024 Dipanshu. All Rights Reserved.</p>
     </div>
