@@ -37,6 +37,40 @@ window.addEventListener("scroll", () => {
   });
 });
 
+// Coding Animation
+const phrases = ["Hi, I am Dipanshu"];
+let phraseIndex = 0;
+let letterIndex = 0;
+let currentPhrase = "";
+let isDeleting = false;
+
+function typeCodingEffect() {
+  const textElement = document.getElementById("coding-animation");
+  if (!textElement) return;
+
+  if (isDeleting) {
+    textElement.textContent = currentPhrase.substring(0, letterIndex--);
+    if (letterIndex < 0) {
+      isDeleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      currentPhrase = phrases[phraseIndex];
+    }
+  } else {
+    textElement.textContent = currentPhrase.substring(0, letterIndex++);
+    if (letterIndex > currentPhrase.length) {
+      isDeleting = true;
+      setTimeout(typeCodingEffect, 1000); // Pause before deleting
+      return;
+    }
+  }
+  setTimeout(typeCodingEffect, isDeleting ? 60 : 160); // Typing speed
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  currentPhrase = phrases[phraseIndex];
+  typeCodingEffect();
+});
+
 // Form Validation
 document.querySelector("form").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -56,9 +90,4 @@ document.querySelector("form").addEventListener("submit", function (e) {
 document.querySelectorAll(".socials a").forEach(icon => {
   icon.addEventListener("mouseenter", () => icon.style.transform = "scale(1.3)");
   icon.addEventListener("mouseleave", () => icon.style.transform = "scale(1)");
-});
-
-// Highlight Text on Button Click
-document.querySelector(".btn-highlight").addEventListener("click", () => {
-  document.querySelector(".highlight-target").classList.toggle("highlight");
 });
